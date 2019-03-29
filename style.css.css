@@ -1,0 +1,67 @@
+body {
+background-image: url(https://bunkr-private-prod.s3.amazonaws.com/3/0/b/30b09e99-f3cc-4d30-a225-4c84cbf5d694_low.gif);
+text-align: center;
+}
+
+#main {
+width: 1000px;
+height: 1010px;
+background-color:silver;
+opacity: 0.9;
+margin:25px auto;
+border:solid 10px black;
+}
+.container{
+  max-width: 800px;
+  margin:auto;
+  font-family: sans-sans-serif;
+}
+.month{
+  text-align:Center;
+  background: grey;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  color:white;
+  padding:25px;
+  border: 1px solid darkred;
+}
+table, th, td {
+    width:100%;
+    table-layout:fixed;
+    text-align: center;
+    font-size:17px;
+    border-collapse: collapse;
+    border:1px solid darkred;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: Gold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+}
+
+#footer > p
+{
+text-align:center;
+}
+.social
+{
+float:middle;
+padding:5px;
+height:32px;
+width:32px;
+}
