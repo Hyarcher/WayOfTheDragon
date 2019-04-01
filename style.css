@@ -11,18 +11,35 @@ h2 {
     font-size: 30px;
 }
 
-h3{
+h3 {
     font-family: Helvetica, sans-serif;
     font-size: 25px;
 }
 
-#main {
+ #main {
     width: 1000px;
     height: 1010px;
     background-color:silver;
     opacity: 0.9;
     margin:25px auto;
     border:solid 10px black;
+    font-family: fantasy;
+}
+
+.border{
+  width: 900px;
+  height: auto;
+  border-style:solid;
+  border-color:#287EC7;
+  margin: auto;
+  overflow: auto;
+
+}
+ .border h2{
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+
 }
 
 .container {
