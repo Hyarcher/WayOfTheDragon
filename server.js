@@ -1,24 +1,16 @@
+'use strict';
+
 const express = require('express');
 const app = express();
 
-const GoogleAuth = require('simple-google-openid');
+app.use(express.static('public'));
 
-// you can put your client ID here
-app.use(GoogleAuth("j0he62uk0oi1ls5fjtp6qdlvmprkinen.apps.googleusercontent.com"));
-
-// return 'Not authorized' if we don't have a user
-app.use('/api', GoogleAuth.guardMiddleware());
-
-app.get('/api/hello', (req, res) => {
-  res.send('Hello ' + (req.user.displayName || 'user without a name') + '!');
-
-  console.log('successful authenticated request by ' + req.user.emails[0].value);
+app.get('/',function(req, res){
+  res.sendFile(__dirname + '/index.html');
 });
 
-// this will serve the HTML file shown below
-app.use(express.static('static'));
-
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}!`);
+app.get('/css/style.css',function(req, res){
+  res.sendFile(__dirname + '/css/style.css');
 });
+
+app.listen(8080);
