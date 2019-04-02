@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main">
+<h1>Application Settings</h1>
+
+<form action="/action_page.php">
+  <h3>Dark Theme</h3>
+  On<input type="radio" name="dark-theme" value="dark-theme-on">
+  <br>
+  Off<input type="radio" name="dark-theme" value="dark-theme-off">
+  <br><br>
+  <h3>Calendar Format:</h3><br>
+  <input list="cal-format">
+  <datalist id="cal-format">
+    <option value="Month">
+    <option value="Week">
+    <option value="Day">
+  </datalist><br><br>
+  <input type="submit" name"Month" value="Create Event"><br>
+</form>
+<a href="AccountSettingsPage.html"><button>Modify Account Settings</button></a><br>
+<a href="ViewCalendarPage.html"><button>Cancel</button></a>
+
+</body>
+</div>
+</html>
