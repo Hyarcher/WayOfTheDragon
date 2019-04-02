@@ -1,0 +1,27 @@
+body {
+  background-image: url("Images/scroll.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+h1{
+text-align: center;
+margin-left: 50px;
+margin-top: 350px;
+margin-bottom: 20px;
+
+
+}
+
+.text{
+  text-align: center;
+  margin-left: 50px;
+
+  margin-bottom: 20px;
+}
+
+.dragon{
+  text-align: center;
+  margin-left: 500px;
+
+}
