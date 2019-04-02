@@ -4,16 +4,23 @@ body {
   background-position: top;
 }
 
+@font-face {
+    font-family: 'Gang of Three';
+    src: url(/Fonts/go3v2.ttf);
+}
+
 h1{
-text-align: center;
-margin-left: 50px;
-margin-top: 350px;
-margin-bottom: 20px;
+  font-family: 'Gang of Three';
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 350px;
+  margin-bottom: 20px;
 
 
 }
 
 .text{
+  font-family: 'Gang of Three';
   text-align: center;
   margin-left: 50px;
 
