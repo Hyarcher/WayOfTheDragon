@@ -2,24 +2,31 @@
 <title>Way of The Dragon</title>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <meta name="google-signin-client_id" content="159342932231-j0he62uk0oi1ls5fjtp6qdlvmprkinen.apps.googleusercontent.com">
+<link rel="stylesheet" href="index.css"/>
 
+
+<body>
 
 <h1>Way of the Dragon<span id="greeting"></span></h1>
 
-<p>Way of the Dragon is a.......</p>
+<p class="text">Way of the Dragon is a revolutionary  and modern calendar application</p>
 
-<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-<p><a href="#" onclick="signOut();">Sign out</a></p>
+<img class="dragon" src="Images/dragon.png" alt="Dragon"  width="400" height="350"/>
 
-<p>Below is the response from the server API: <button onclick="callServer()">refresh</button>
-<pre id="server-response" style="border: 1px dashed black; min-width: 10em; min-height: 1em; padding: .5em;"></pre>
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div
+
+
+
+
+</body>
+
+
 
 <script>
 function onSignIn(googleUser) {
   const profile = googleUser.getBasicProfile();
   const el = document.getElementById('greeting');
   el.textContent = '– Hello ' + profile.getName() + '!';
-  //res.redirect('account');
   window.location="/ViewCalendarPage.html"
 
   callServer();
