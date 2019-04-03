@@ -40,9 +40,9 @@ tr {
     background-color: white;
 }
 
- #main {
+#main {
     width: 1000px;
-    height: 1010px;
+    height: 600px;
     background-color: silver;
     opacity: 0.9;
     margin: 25px auto;
@@ -50,24 +50,11 @@ tr {
     font-family: 'Gang of Three';
 }
 
-.border{
-  border: solid;
-  border-color: black;
-  border-radius: 25px;
-  margin: 20px;
-}
-
- .border h2 {
+.border h2 {
     font-family: 'Gang of Three';
     font-size: 15px;
     text-align: left;
-    padding-left: 30px;
-}
 
-.border h3{
-  text-align: right;
-  font-size: 15px;
-  padding-right: 30px;
 }
 
 .container {
@@ -87,12 +74,18 @@ tr {
     font-family: 'Gang of Three';
 }
 
-table, th, td {
+table, th {
     width: 100%;
     table-layout: fixed;
     text-align: center;
-    font-size: 17px;
+    font-size: 25px;
     font-family: 'Gang of Three';
+    background-color: grey;
+}
+
+td {
+    font-family: 'Gang of Three';
+    padding-bottom: 30px;
 }
 
 ul {
