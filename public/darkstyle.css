@@ -21,26 +21,9 @@ h2 {
 }
 
 h3 {
-    font-family: H'Gang of Three';
+    font-family: 'Gang of Three';
     font-size: 25px;
     color: white;
-}
-
-#settingsButton {
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-
-tr {
-    font-family: 'Gang of Three';
-    background-color: white;
 }
 
 #main {
@@ -51,59 +34,4 @@ tr {
     margin: 25px auto;
     border: solid 10px black;
     font-family: 'Gang of Three';
-}
-
-.border h2 {
-    font-family: 'Gang of Three';
-    font-size: 15px;
-    text-align: left;
-
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    font-family: 'Gang of Three';
-}
-
-.month {
-    text-align: Center;
-    background: grey;
-    font-size: 2.5em;
-    letter-spacing: 1px;
-    color: white;
-    padding: auto;
-    border: 1px solid black;
-    font-family: 'Gang of Three';
-}
-
-table, th {
-    width: 100%;
-    table-layout: fixed;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Gang of Three';
-    background-color: grey;
-}
-
-td {
-    font-family: 'Gang of Three';
-    padding-bottom: 30px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    font-family: 'Gang of Three';
-}
-
-li {
-    float: left;
-}
-
-#footer > p {
-    text-align:center;
 }
