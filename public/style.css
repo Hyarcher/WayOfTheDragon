@@ -1,5 +1,8 @@
 body {
     text-align: center;
+    background-image: url("Images/ocean.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 /* Custom font */
@@ -23,6 +26,11 @@ h3 {
     font-size: 25px;
 }
 
+.background {
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
 #settingsButton {
     background-color: Transparent;
     background-repeat: no-repeat;
@@ -31,8 +39,19 @@ h3 {
     overflow: hidden;
     outline: none;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    top: 35px;
+    right: 210px;
+}
+
+#previous, #next, #year, #month {
+    background-color: #9e0000;
+    border: solid 5px black;
+    color: black;
+    padding: 10px 20px;
+    font-family: 'Gang of Three';
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
 }
 
 tr {
@@ -42,50 +61,27 @@ tr {
 
 #main {
     width: 1000px;
-    height: 600px;
-    background-color: silver;
+    height: 650px;
+    background-color: #e0cb91;
     opacity: 0.9;
     margin: 25px auto;
     border: solid 10px black;
     font-family: 'Gang of Three';
 }
 
-.border h2 {
-    font-family: 'Gang of Three';
-    font-size: 15px;
-    text-align: left;
-
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    font-family: 'Gang of Three';
-}
-
-.month {
-    text-align: Center;
-    background: grey;
-    font-size: 2.5em;
-    letter-spacing: 1px;
-    color: white;
-    padding: auto;
-    border: 1px solid black;
-    font-family: 'Gang of Three';
-}
-
 table, th {
     width: 100%;
+    height: 3.5vw;
     table-layout: fixed;
     text-align: center;
     font-size: 25px;
     font-family: 'Gang of Three';
-    background-color: grey;
+    background-color: #9e0000;
 }
 
 td {
     font-family: 'Gang of Three';
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 ul {
