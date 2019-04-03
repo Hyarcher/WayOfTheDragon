@@ -7,11 +7,14 @@
 <div id="main">
 <h1>Application Settings</h1>
 
+<a href="#" onclick="changeCSS('style.css', 0);">STYLE 1</a>
+<a href="#" onclick="changeCSS('darkstyle.css', 0);">STYLE 2</a>
+
 <form action="/action_page.php">
   <h3>Dark Theme</h3>
-  On<input type="radio" name="dark-theme" value="dark-theme-on">
+  <h4>On<input type="radio" name="dark-theme" value="dark-theme-on"></h4>
   <br>
-  Off<input type="radio" name="dark-theme" value="dark-theme-off">
+  <h4>Off<input type="radio" name="dark-theme" value="dark-theme-off"></h4>
   <br><br>
   <h3>Calendar Format:</h3><br>
   <input list="cal-format">
@@ -24,6 +27,8 @@
 </form>
 <a href="AccountSettingsPage.html"><button>Modify Account Settings</button></a><br>
 <a href="ViewCalendarPage.html"><button>Cancel</button></a>
+
+<script src="Dark-theme.js"></script>
 
 </body>
 </div>
