@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="events.js"></script>
     <style>
         .formBox{
             padding: 0.5rem 2rem;
@@ -38,33 +39,5 @@
 </body>
 <script>
 
-
-    let movies = [];
-    // example {id:1592304983049, title: 'Deadpool', year: 2015}
-    const addMovie = (ev)=>{
-        ev.preventDefault();  //to stop the form submitting
-        let movie = {
-            id: Date.now(),
-            even: document.getElementById('event').value,
-            location: document.getElementById('location').value,
-            Time: document.getElementById('time').value,
-            description: document.getElementById('description').value
-        }
-        movies.push(movie);
-        document.forms[0].reset(); // to clear the form for the next entries
-        //document.querySelector('form').reset();
-        //for display purposes only
-        console.warn('added' , {movies} );
-        let pre = document.querySelector('#msg pre');
-        pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
-
-
-        //saving to localStorage
-        localStorage.setItem('MyMovieList', JSON.stringify(movies) );
-    }
-    document.addEventListener('DOMContentLoaded', ()=>{
-        document.getElementById('btn').addEventListener('click', addMovie);
-    });
-</script>
 
 </html>
