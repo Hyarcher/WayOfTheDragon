@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="event.css" type="text/css"/>
     <style>
         .formBox{
             padding: 0.5rem 2rem;
@@ -14,19 +14,19 @@
 <body>
     <form>
         <div class="formBox">
-            <label for="event">Event name</label>
+            <label for="event"> Event name </label>
             <input type="text" id="event" placeholder="event"/>
         </div>
         <div class="formBox">
-            <label for="location">Location</label>
+            <label for="location"> Location </label>
             <input type="text" id="location" placeholder="location"/>
         </div>
         <div class="formBox">
-            <label for="time">Time</label>
+            <label for="time"> Time </label>
             <input type="number" id="time" placeholder="time e.g 1806"/>
         </div>
         <div class="formBox">
-            <label for="description">Description</label>
+            <label for="description"> Description </label>
             <input type="text" id="description" placeholder="description"/>
         </div>
             <button class="formBox" id="btn"> Submit </button>
@@ -64,7 +64,6 @@
             document.getElementById('btn').addEventListener('click', addEvent);
         });
     </script>
+
 </body>
-
-
 </html>
