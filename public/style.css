@@ -43,6 +43,8 @@ h3 {
     right: 210px;
 }
 
+
+
 #previous, #next, #year, #month {
     background-color: #9e0000;
     border: solid 5px black;
@@ -61,7 +63,7 @@ tr {
 
 #main {
     width: 1000px;
-    height: 650px;
+    height: 720px;
     background-color: #e0cb91;
     opacity: 0.9;
     margin: 25px auto;
