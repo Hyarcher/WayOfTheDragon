@@ -38,9 +38,7 @@ function onSignIn(googleUser) {
 }
 async function signOut() {
   await gapi.auth2.getAuthInstance().signOut();
-  console.log('User signed out.');
-  const el = document.getElementById('greeting');
-  el.textContent = 'Bye!';
+  window.location="/index.html"
 }
 
 async function callServer() {
