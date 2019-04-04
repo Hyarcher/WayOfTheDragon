@@ -1,71 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .formBox{
+            padding: 0.5rem 2rem;
+        }
+    </style>
 </head>
 <body>
-  <script type="text/javascript">
-  var currentEnabled = null;
-  function enableElement(elem) {
-  if (currentEnabled) {
-  currentEnabled.disabled = true;
-  }
-  elem.disabled = false;
-  currentEnabled = elem;
-  }
-  </script>
-
-<div id="main">
-<h1>Application Settings</h1>
-
-<form action="appsett-var.php">
-  <h3>Event Name</h3>
-  <input type="text" name="eventname">
-  <br>
-  <h3>Event Time</h3>
-  <input type="text" name="eventname" value="Start hh:mm">
-  <input type="text" name="eventname" value="Finish hh:mm">
-  <br>
-  <h3>Event Location</h3>
-  <input type="text" name="eventlocation">
-  <br>
-  <!--Goal of this is to disable the text boxes when the 'no' radio button is
-  selected. Then enabling the box when the 'yes' radio button is selected-->
-  <fieldset id="group1">
-    <h3>Would you like an early warning?</h3>
-    Yes  <input type="text" name="inp1" disabled="disabled">
-      <input type="radio" name="group1" value="1"
-      onclick="enableElement(this.form.elements['inp1']);">
-    No<input type="radio" value="warn-off" checked name="group1">
-    <br>
-  </fieldset>
-
-  <fieldset id="group2">
-    <h3>Would you like to arrive early?</h3>
-    Yes<input type="text" name="inp2" disabled="disabled">
-    <input type="radio" name="group2" value="1"
-    onclick="enableElement(this.form.elements['inp2']);">
-    No<input type="radio" value="warn-off" checked name="group2">
-    <br>
-  </fieldset>
-
-  Event Colour:<br>
-  <input type="color" name="eventcolour" value="#ff0000"><br><br>
-
-  <h3>Event Severity:</h3><br>
-  <input list="evnet-severity">
-  <datalist id="evnet-severity">
-    <option value="High">
-    <option value="Medium">
-    <option value="Low">
-  </datalist><br><br>
-
-  <h3>Event Description:</h3><br>
-  <textarea name="message" rows="5" cols="30"></textarea><br>
-  <input type="submit" name"Save" value="Save and Exit"><br>
-</form>
-<a href="EventListpage.html"><button>Cancel</button></a>
-
+    <form>
+        <div class="formBox">
+            <label for="event">Event name</label>
+            <input type="text" id="event" placeholder="event"/>
+        </div>
+        <div class="formBox">
+            <label for="location">Loaction</label>
+            <input type="text" id="location" placeholder="location"/>
+        </div>
+        <div class="formBox">
+            <label for="time">Time</label>
+            <input type="number" id="time" placeholder="time e.g 1806"/>
+        </div>
+        <div class="formBox">
+            <label for="description">Description</label>
+            <input type="text" id="description" placeholder="description"/>
+        </div>
+        <div class="formBox">
+            <button id="btn">Click to Add event</button>
+        </div>
+        <div id="msg">
+            <pre></pre>
+        </div>
+    </form>
 </body>
-</div>
+<script>
+
+
+    let movies = [];
+    // example {id:1592304983049, title: 'Deadpool', year: 2015}
+    const addMovie = (ev)=>{
+        ev.preventDefault();  //to stop the form submitting
+        let movie = {
+            id: Date.now(),
+            even: document.getElementById('event').value,
+            location: document.getElementById('location').value,
+            Time: document.getElementById('time').value,
+            description: document.getElementById('description').value
+        }
+        movies.push(movie);
+        document.forms[0].reset(); // to clear the form for the next entries
+        //document.querySelector('form').reset();
+        //for display purposes only
+        console.warn('added' , {movies} );
+        let pre = document.querySelector('#msg pre');
+        pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
+
+
+        //saving to localStorage
+        localStorage.setItem('MyMovieList', JSON.stringify(movies) );
+    }
+    document.addEventListener('DOMContentLoaded', ()=>{
+        document.getElementById('btn').addEventListener('click', addMovie);
+    });
+</script>
+
 </html>
