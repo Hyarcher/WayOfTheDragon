@@ -18,7 +18,7 @@
             <input type="text" id="event" placeholder="event"/>
         </div>
         <div class="formBox">
-            <label for="location">Loaction</label>
+            <label for="location">Location</label>
             <input type="text" id="location" placeholder="location"/>
         </div>
         <div class="formBox">
@@ -29,9 +29,7 @@
             <label for="description">Description</label>
             <input type="text" id="description" placeholder="description"/>
         </div>
-        <div class="formBox">
-            <button id="btn">Click to Add event</button>
-        </div>
+            <button class="formBox" id="btn"> Submit </button>
         <div id="msg">
             <pre></pre>
         </div>
@@ -39,31 +37,31 @@
     <script>
 
 
-        let movies = [];
+        let events = [];
         // example {id:1592304983049, title: 'Deadpool', year: 2015}
-        const addMovie = (ev)=>{
+        const addEvent = (ev)=>{
             ev.preventDefault();  //to stop the form submitting
-            let movie = {
+            let eventt = {
                 id: Date.now(),
                 even: document.getElementById('event').value,
                 location: document.getElementById('location').value,
                 Time: document.getElementById('time').value,
                 description: document.getElementById('description').value
             }
-            movies.push(movie);
+            events.push(eventt);
             document.forms[0].reset(); // to clear the form for the next entries
             //document.querySelector('form').reset();
             //for display purposes only
-            console.warn('added' , {movies} );
+            console.warn('added' , {events} );
             let pre = document.querySelector('#msg pre');
-            pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
+            pre.textContent = '\n' + JSON.stringify(events, '\t', 2);
 
 
             //saving to localStorage
-            localStorage.setItem('MyMovieList', JSON.stringify(movies) );
+            localStorage.setItem('MyEventList', JSON.stringify(events) );
         }
         document.addEventListener('DOMContentLoaded', ()=>{
-            document.getElementById('btn').addEventListener('click', addMovie);
+            document.getElementById('btn').addEventListener('click', addEvent);
         });
     </script>
 </body>

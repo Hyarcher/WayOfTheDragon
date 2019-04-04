@@ -43,9 +43,18 @@ h3 {
     right: 210px;
 }
 
+#event, #location, #time, #description {
+    background-color: white;
+    border: solid 5px black;
+    color: black;
+    padding: 10px 20px;
+    font-family: 'Gang of Three';
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
 
-
-#previous, #next, #year, #month {
+.formBox, #previous, #next, #year, #month, #Events {
     background-color: #9e0000;
     border: solid 5px black;
     color: black;
