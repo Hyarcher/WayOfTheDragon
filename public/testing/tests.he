@@ -5,8 +5,6 @@ prints "Test passed!". Otherwise, it prints "Test failed :(".
 """
 
 """
-# 1.1 Opens the browser, logs in. The user should then be redirected to the Dashboard
-
 start_chrome("google.com/?hl=en")
 go_to("http://localhost:8080/")
 click("Sign in")
@@ -14,3 +12,13 @@ write("JohnGregory1995@gmail.com")
 click("Next")
 write("JohnJohn1234", into="password")
 """
+
+start_chrome("google.com/?hl=en")
+go_to("http://localhost:8080/ViewCalendarPage.html")
+click("next")
+click("next")
+click("next")
+click("previous")
+click("previous")
+click("previous")
+click("previous")
