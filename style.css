@@ -1,0 +1,113 @@
+body {
+    text-align: center;
+    background-image: url("Images/ocean.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/* Custom font */
+@font-face {
+    font-family: 'Gang of Three';
+    src: url(/Fonts/go3v2.ttf);
+}
+
+h1 {
+    font-family: 'Gang of Three';
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Gang of Three';
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Gang of Three';
+    font-size: 25px;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#settingsButton {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    position: fixed;
+    top: 35px;
+    right: 210px;
+}
+
+.EventsButton, #event, #location, #time, #description {
+    background-color: white;
+    border: solid 5px black;
+    color: black;
+    padding: 10px 20px;
+    font-family: 'Gang of Three';
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.formBox, #previous, #next, #year, #month, #Events {
+    background-color: #9e0000;
+    border: solid 5px black;
+    color: black;
+    padding: 10px 20px;
+    font-family: 'Gang of Three';
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+tr {
+    font-family: 'Gang of Three';
+    background-color: white;
+}
+
+#main {
+    width: 1000px;
+    height: 720px;
+    background-color: #e0cb91;
+    opacity: 0.9;
+    margin: 25px auto;
+    border: solid 10px black;
+    font-family: 'Gang of Three';
+}
+
+table, th {
+    width: 100%;
+    height: 3.5vw;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gang of Three';
+    background-color: #9e0000;
+}
+
+td {
+    font-family: 'Gang of Three';
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Gang of Three';
+}
+
+li {
+    float: left;
+}
+
+#footer > p {
+    text-align:center;
+}
