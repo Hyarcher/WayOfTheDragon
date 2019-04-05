@@ -1,3 +1,5 @@
+
+/* Alters the body tag to change the background image to invertedocean.jpg */
 body {
     text-align: center;
     background-image: url("Images/invertedocean.jpg");
@@ -11,6 +13,7 @@ body {
     src: url(/Fonts/go3v2.ttf);
 }
 
+/* Changes the colour of the h1, h2, and h3 tags to white */
 h1 {
     font-family: 'Gang of Three';
     font-size: 50px;
@@ -29,6 +32,7 @@ h3 {
     color: white;
 }
 
+/* Changes the #main class to add a black border */
 #main {
     width: 1000px;
     height: 600px;

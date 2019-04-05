@@ -8,11 +8,14 @@
 <h1>Application Settings</h1>
 
 <form action="/action_page.php">
+
+  <!-- A set of radio buttons which, onclick, uses the changeCSS(); function to switch the css to darkstyle.css -->
   <h3>Dark Theme</h3>
   <h3>On<input type="radio" name="dark-theme" id="checkbox1" value="dark-theme-on" onclick="changeCSS('darkstyle.css', 0);"></h3>
 
   <h3>Off<input type="radio" name="dark-theme" id="checkbox2" value="dark-theme-off" onclick="changeCSS('style.css', 0);" checked></h3>
 
+  <!-- A dropdown menu which should allow the user to change the calendar to 'day', 'week', and 'year' views -->
   <h3>Calendar Format:</h3><br>
   <input list="cal-format">
   <datalist id="cal-format">
@@ -21,10 +24,14 @@
     <option value="Day">
   </datalist><br><br>
 </form>
-<a href="ViewCalendarPage.html"><button type="button" onClick="save()">Save and Exit</button></a>
 
+  <!-- A button which when clicked will call the save(); function which saves which radio button has been checked. It then exits to ViewCalendarPage.html -->
+<a href="ViewCalendarPage.html"><button type="button" onClick="save();">Save and Exit</button></a>
+
+  <!-- A button which when clicked will exit the user to the ViewCalendarPage.html -->
 <a href="ViewCalendarPage.html"><button>Cancel</button></a>
 
+  <!-- Refernces the Dark-theme.js file -->
 <script src="scripts/Dark-theme.js"></script>
 
 </body>

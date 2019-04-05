@@ -13,6 +13,7 @@
 </head>
 <body>
     <form>
+      <!-- Displays the event, location, time, and description boxes in the form -->
         <div class="formBox">
             <label for="event"> Event name </label>
             <input type="text" id="event" placeholder="event"/>
@@ -30,6 +31,7 @@
             <input type="text" id="description" placeholder="description"/>
         </div>
 
+      <!-- A button that when clicked submits the data entered below -->
             <button class="formBox" id="btn"> Submit </button>
             <button class="formBox" type='button' onclick="window.location.href='ViewCalendarPage.html'"> Back </button>
 
@@ -41,7 +43,7 @@
 
 
         let events = [];
-        // example {id:1592304983049, title: 'Deadpool', year: 2015}
+        // example {id:1592304983049, event: Hospital, location: Doctors, time: 1400, description: Broken leg}
         const addEvent = (ev)=>{
             ev.preventDefault();  //to stop the form submitting
             let eventt = {
@@ -63,6 +65,8 @@
             //saving to localStorage
             localStorage.setItem('MyEventList', JSON.stringify(events) );
         }
+
+        //an event listener for the sumbit button clicked
         document.addEventListener('DOMContentLoaded', ()=>{
             document.getElementById('btn').addEventListener('click', addEvent);
         });
