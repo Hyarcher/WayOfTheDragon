@@ -37,3 +37,10 @@ write("Wedding time", into="description")
 click("submit")
 click("back")
 go_to("http://localhost:8080/all")
+go_to("http://localhost:8080/add/lunch")
+print 'Test failed :( user will follow add route again after display message'
+go_to("http://localhost:8080/add/lunch/1300")
+go_to("http://localhost:8080/all")
+print 'Successfully added event to local storage :)'
+go_to("http://localhost:8080/ViewCalendarPage.html")
+click("sign out")
