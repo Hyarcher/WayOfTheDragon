@@ -47,5 +47,9 @@ To view this data the user enters 'http://localhost:8080/all' again which displa
 
 By clicking the gear icon on the ViewCalendarPage the user is redirected to the ApplicationSettingsPage. The user can use the radio buttons to toggle between a default or dark theme. This only works for the ApplicationSettingsPage.
 
+- Testing
+
+Testing can be found within the Public/Testing folder.
+
 
 Enjoy the application :)
