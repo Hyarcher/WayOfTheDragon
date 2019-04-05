@@ -1,0 +1,7 @@
+2019-04-05 16:15:10,992 [helium.api] [INFO] - start_chrome('google.com/?hl=en')
+2019-04-05 16:15:15,684 [helium.api] [INFO] - go_to('http://localhost:8080/')
+2019-04-05 16:15:16,157 [helium.api] [INFO] - click('Sign in')
+2019-04-05 16:15:16,247 [helium.api] [INFO] - write('JohnGregory1995@gmail.com')
+2019-04-05 16:15:17,361 [helium.api] [INFO] - click('Next')
+2019-04-05 16:15:17,460 [helium.api] [INFO] - write('JohnJohn1234')
+2019-04-05 16:15:17,493 [helium.api] [INFO] - press('a')
