@@ -1,3 +1,7 @@
+/* Main theme CSS page used a number of times for continuous style on repeated elements of HTML pages */
+/* links appropriate variables setting positions, sizes and text fonts for effective interface design */
+
+
 body {
     text-align: center;
     background-image: url("Images/ocean.jpg");
@@ -5,32 +9,33 @@ body {
     background-position: top;
 }
 
-/* Custom font */
+/* Custom font imported */
 @font-face {
     font-family: 'Gang of Three';
     src: url(/Fonts/go3v2.ttf);
 }
 
+/* Controls anything with h1 tag upon reference to the style.css sheet*/
 h1 {
     font-family: 'Gang of Three';
     font-size: 50px;
 }
-
+/* Controls anything with h2 tag upon reference to the style.css sheet */
 h2 {
     font-family: 'Gang of Three';
     font-size: 30px;
 }
-
+/* Controls anything with h3 tag upon reference to the style.css sheet */
 h3 {
     font-family: 'Gang of Three';
     font-size: 25px;
 }
-
+/* Controls anything with class="background" tag upon reference to the style.css sheet ensuring constant properties */
 .background {
     background-repeat: no-repeat;
     background-position: top;
 }
-
+/* Controls anything with id="settingsbutton" tag upon reference to the style.css sheet ensuring constant properties */
 #settingsButton {
     background-color: Transparent;
     background-repeat: no-repeat;
@@ -42,7 +47,7 @@ h3 {
     top: 35px;
     right: 210px;
 }
-
+/* Controls events button which links to relevent events page. noted with class=".EventsButton" tag  */
 .EventsButton, #event, #location, #time, #description {
     background-color: white;
     border: solid 5px black;
@@ -53,7 +58,7 @@ h3 {
     display: inline-block;
     font-size: 16px;
 }
-
+/* Controls the design of the form inputs on CreateEventPage.html and referneces and ViewCalendarPage.html */
 .formBox, #previous, #next, #year, #month, #Events {
     background-color: #9e0000;
     border: solid 5px black;
@@ -64,12 +69,12 @@ h3 {
     display: inline-block;
     font-size: 16px;
 }
-
+/* Controls the design for the weekdays in ViewCalendarPage.html */
 tr {
     font-family: 'Gang of Three';
     background-color: white;
 }
-
+/* Controls the design of the form inputs on CreateEventPage.html and referneces and ViewCalendarPage.html */
 #main {
     width: 1000px;
     height: 720px;
@@ -79,7 +84,7 @@ tr {
     border: solid 10px black;
     font-family: 'Gang of Three';
 }
-
+/* All the below controlls the calendar table elements design for the UI*/
 table, th {
     width: 100%;
     height: 3.5vw;
@@ -107,7 +112,7 @@ ul {
 li {
     float: left;
 }
-
+/* controls all footer elements with id="footer" */
 #footer > p {
     text-align:center;
 }

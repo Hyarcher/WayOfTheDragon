@@ -2,15 +2,14 @@
 
 <html>
 <head>
-
+<!-- Page title   -->
 <title> Way of The Dragon Calendar </title>
 
+<!-- References and utilising themed style sheet   -->
 <link rel="stylesheet" href="style.css" type="text/css"/>
 
 </head>
-
 <body>
-
 <div id="main">
 
   <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
@@ -18,9 +17,12 @@
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <meta name="google-signin-client_id" content="159342932231-j0he62uk0oi1ls5fjtp6qdlvmprkinen.apps.googleusercontent.com">
 
-
+<!-- Calendar Heading   -->
 <h1> WAY OF THE DRAGON CALENDAR </h1>
 
+<!--Navigation with appropriate classes. Setting button imported as PNG image -->
+<!-- Onclick function redirects user to appropriate page -->
+<!-- list of data that calendar.js uses to display and jump between-->
 <nav class="mainMenu">
     <button type="button" id="settingsButton" onclick="window.location.href='ApplicationSettingsPage.html'">
     <img src='Images/settingslogo.png' width="90px" height="90px"></img>
@@ -114,6 +116,7 @@
     </div>
 </div>
 
+<!-- references calendar.js script that controls the fucntionality-->
 <script src="scripts/Calendar.js"></script>
 
 </body>

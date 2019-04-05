@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Page title. relevent links for google auth and stylesheet -->
 <title>Way of The Dragon</title>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <meta name="google-signin-client_id" content="159342932231-j0he62uk0oi1ls5fjtp6qdlvmprkinen.apps.googleusercontent.com">
@@ -6,24 +7,22 @@
 
 
 <body>
-
 <h1>Way of the Dragon<span id="greeting"></span></h1>
 
+<!-- text class relates to CSS-->
 <p class="text"> Way of the Dragon is a calendar application. </p>
 <p class="text">please use the Google sign in at the bottom of the page on the left in order
   to sign in. </p>
-
+<!--Dragon image imported to page from Images folder-->
 <img class="dragon" src="Images/dragon.png" alt="Dragon"  width="400" height="350"/>
-
+<!-- required div that controlls the google sign in-->
 <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-
-
-
-
 </body>
 
 
-
+<!-- Script is used for Javascript functions inside the HTML -->
+<!-- that utilises the google sign in, required for Google Oauth session. -->
+<!-- asynchronous function is a function which operates asynchronously via the event loop, using an implicit Promise to return its result -->
 <script>
 function onSignIn(googleUser) {
   const profile = googleUser.getBasicProfile();
@@ -64,7 +63,7 @@ async function callServer() {
   el.textContent = data;
 }
 
-// react to computer sleeps, get a new token; gapi doesn't do this reliably
+// react to computer sleeps, get a new token for google api
 // adapted from http://stackoverflow.com/questions/4079115/can-any-desktop-browsers-detect-when-the-computer-resumes-from-sleep/4080174#4080174
 (function () {
   const CHECK_DELAY = 2000;

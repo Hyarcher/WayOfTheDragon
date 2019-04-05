@@ -1,14 +1,20 @@
+/* Main theme CSS for index page loaded on startup of the server on localhost/8080 */
+
+
+/* Inserts scroll image as background ensuring no repeat and relevent positioning */
 body {
   background-image: url("Images/scroll.png");
   background-repeat: no-repeat;
   background-position: top;
 }
 
+/* Releveant font */
 @font-face {
     font-family: 'Gang of Three';
     src: url(/Fonts/go3v2.ttf);
 }
 
+/* Controls the heading with relevent font and margins for positioning */
 h1{
   font-family: 'Gang of Three';
   text-align: center;
@@ -17,6 +23,7 @@ h1{
   margin-bottom: 20px;
 }
 
+/* Controls anything with the class="text" tag in index.html */
 .text{
   font-family: 'Gang of Three';
   text-align: center;
@@ -24,6 +31,7 @@ h1{
   margin-bottom: 20px;
 }
 
+/* Controls the dragon image in index.html showing class="dragon"  */
 .dragon{
   text-align: center;
   margin-left: 500px;
