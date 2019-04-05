@@ -37,7 +37,7 @@ The user can view a calendar after they log into the applciation. This calendar 
 
 - Creating an event
 
-By clicking the 'Events' button on the ViewCalendarPage the user is redirected to the CreateEventPage. The user can create an event that saves below in the CreateEventPage but does not save when the user leaves or refreshes the page. Alternatively, the user can change the URL to 'http://localhost:8080/all' which will show data stored in the JSON file. Any data the user needs to store locally, they can save in this file by changing the URL to 'http://localhost:8080/string/integer' where string and integer are objects of the user's choice. To view this data the user enters 'http://localhost:8080/all' again. This displays the whole JSON file.
+By clicking the 'Events' button on the ViewCalendarPage the user is redirected to the CreateEventPage. The user can create an event that saves below in the CreateEventPage but does not save when the user leaves or refreshes the page. Alternatively, the user can change the URL to 'http://localhost:8080/all' which will show data stored in the JSON file. Any data the user needs to store locally, they can save in this file by changing the URL to 'http://localhost:8080/add/string/integer' where string and integer are objects of the user's choice. To view this data the user enters 'http://localhost:8080/all' again. This displays the whole JSON file.
 
 
 - Dark theme
