@@ -15,8 +15,8 @@ let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//testing purposes, logging data to terminal
-console.log(words);
+//logs user instruction in terminal
+console.log("all set... please go to http://localhost:8080 in your chosen web browser");
 
 //HTTP method that the middleware function handles
 app.use(express.static('public'));
@@ -64,7 +64,7 @@ function addMovie(request,response){
     let data = JSON.stringify(words, null, 2);
   fs.writeFile('words.json', data, finished);
 function finished(err){
-      console.log('all set...');
+      console.log('event added');
       reply = {
         word: word,
         score: score,
